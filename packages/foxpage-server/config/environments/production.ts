@@ -11,8 +11,9 @@ export default {
     '/users/register',
     '/healthcheck',
   ],
-  mongodb: mongoConfig || 'mongodb://127.0.0.1:45201/foxpage?retryWrites=false',
-  locale: 'en', // Current language
+  mongodb: mongoConfig || '',
   plugins: [],
-  resourceConfig: { },
+  resourceConfig: {
+    unpkg: {},
+  },
 };
