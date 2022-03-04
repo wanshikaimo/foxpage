@@ -7,6 +7,7 @@ import { config } from '../../app.config';
 const dbConnect = () => {
   console.time('mongoose');
   mongoose.connect(config.mongodb, {
+    authSource: 'admin',
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
