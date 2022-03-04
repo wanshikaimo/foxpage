@@ -1,4 +1,4 @@
-const mongoConfig = process.env.MONGO_CONFIG;
+// const mongoConfig = process.env.MONGO_CONFIG;
 
 export default {
   host: '',
@@ -11,7 +11,7 @@ export default {
     '/users/register',
     '/healthcheck',
   ],
-  mongodb: mongoConfig || '',
+  mongodb: 'mongodb://'+ 'admin:123456@' + '10.10.201.38:27018/test?authSource=admin;retryWrites=false', // Database connection string
   plugins: ['@foxpage/foxpage-plugin-aws-s3'],
   allLocales: [
     'en-US',

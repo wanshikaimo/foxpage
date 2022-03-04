@@ -1,21 +1,21 @@
 module.exports = {
   dev: {
     env: 'dev',
-    foxpageApi: 'http://ibu-qa-opensource-164331726.ap-southeast-1.elb.amazonaws.com/foxpage-server/',
+    foxpageApi: 'http://127.0.0.1:50000/',
     // foxpageApi: 'api.foxfamily.io/',
-    ssrApi: 'http://ssr.api.foxfamily.io/',
+    ssrApi: 'http://127.0.0.1:50000/',
     slug: '',
   },
   fat: {
     env: 'fat',
-    foxpageApi: 'http://ibu-qa-opensource-164331726.ap-southeast-1.elb.amazonaws.com/foxpage-server/',
-    ssrApi: 'http://ssr.api.foxfamily.io/',
+    foxpageApi: 'http://127.0.0.1:50000/',
+    ssrApi: 'http://127.0.0.1:50000/',
     slug: 'foxpage-admin',
   },
   prd: {
     env: 'prd',
-    foxpageApi: 'http://api.foxfamily.io/',
-    ssrApi: 'http://ssr.api.foxfamily.io/',
+    foxpageApi: 'http://127.0.0.1:50000/',
+    ssrApi: 'http://127.0.0.1:50000/',
     slug: 'foxpage-admin',
   },
 };

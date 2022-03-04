@@ -1,4 +1,3 @@
-const mongoConfig = process.env.MONGO_CONFIG;
 
 export default {
   host: '',
@@ -11,7 +10,7 @@ export default {
     '/users/register',
     '/healthcheck',
   ], // Skip to verify the interface of the token
-  mongodb: mongoConfig || 'mongodb://127.0.0.1:45201/test?retryWrites=false', // Database connection string
+  mongodb: 'mongodb://'+ 'admin:123456@' + '10.10.201.38:27018/test?authSource=admin;retryWrites=false', // Database connection string
   locale: 'en', // Current language
   plugins: [
     '@foxpage/foxpage-plugin-aws-s3',
